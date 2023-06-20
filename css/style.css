@@ -1,0 +1,133 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --bgc-body: #f5f5f5;
+    --icon: #FB5607;
+    --destaque: #FB5607 ; /* Possíveis: #50d965 , #00b300 */
+    --title-color: #008000;
+
+    --link: #000000;
+    --white: #FFFFFF;
+    --logo: #FB5607;
+
+    --color-body: #ffffff;
+    --destaque-bgc: #fb5407;
+    --icone-color: #fb5607;
+    --subtitle-color: #fb5607;
+    --button-bgc: #fb5607;
+    --button-border: #fb5607;
+    --button-color: #ffffff;
+    --gradient: linear-gradient(45deg, #fb5607 34%, #fd8249 94%);
+    --icone-gradient: linear-gradient(45deg, #fb5607 34%, #f3e249 94%);
+    --icone-investimento-gradient: linear-gradient(45deg, #70E000 34%, #008000 94%);
+    --gradient-hover: linear-gradient(45deg, #fd8249  0%, #fb5607);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bgc-body);
+}
+
+/* classes gerais */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid green;
+}
+
+.espaco-interno {
+    padding-block: 2rem;
+}
+
+.flex-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.title {
+    font-size: 3rem;
+    line-height: 150%;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 2.3rem;
+    line-height: 150%;
+    text-align: center;
+}
+
+.paragrafo-principal {
+    font-size: 1.6rem;
+    line-height: 150%;
+    text-align: center;    
+}
+
+.imagem-grafica {
+    width: 100%;
+}
+
+.button {
+    background-image: var(--gradient);
+    border: 1px solid var(--button-border);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+
+
+
+
+/* tags gerais */
+i {
+    color: var(--icon);
+}
+
+b {
+    color: var(--destaque);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    border: 1px solid green;
+}
+
+.navegacao-barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid orange;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    border: 1px solid blue;
+}
+
+.navegacao-icon {
+    font-size: 1.5rem;
+}
+
+.logo {
+    font-size: 1rem;
+    color: var(--logo);
+}
