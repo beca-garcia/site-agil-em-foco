@@ -10,6 +10,7 @@
     --bgc-body: #f5f5f5;
     --icon: #FB5607;
     --destaque: #FB5607 ; /* Possíveis: #50d965 , #00b300 */
+    --bgc-section: #FFF1EB;
     --title-color: #008000;
 
     --link: #000000;
@@ -43,7 +44,6 @@ body {
 .container {
     width: 90%;
     margin: 0 auto;
-    border: 1px solid green;
 }
 
 .espaco-interno {
@@ -54,6 +54,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+}
+
+.logo {
+    width: 15%;
 }
 
 .title {
@@ -130,14 +134,9 @@ ul {
     font-size: 1.5rem;
 }
 
-.logo {
-    font-size: 1rem;
-    color: var(--logo);
-}
-
 /* Anne Caroline */
 #anne {
-    background-color: #FFF1EB;
+    background-color: var(--bgc-section);
 
 }
 
@@ -147,6 +146,7 @@ ul {
 
 .anne-foto {
     width: 100%;
+    padding: 1rem;
 }
 
 .anne h3 {
@@ -167,3 +167,49 @@ ul {
 }
 
 /* Formas de Contato */
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card i {
+    font-size: 3.5rem;
+    color: #000;
+}
+
+/* Rodapé */
+#rodape {
+    background-color: var(--bgc-section);
+}
+
+.rodape .flex-coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.rodape .flex-coluna img {
+    margin-bottom: 2rem;
+}
+
+.wrapper-flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.wrapper-flex-row a,
+.wrapper-flex-row p,
+.rodape p {
+    color: var(--link);
+    font-weight: 700;
+    text-align: center;
+}
+
+.wrapper-flex-row i {
+    font-size: 0.4rem;
+}
