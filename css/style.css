@@ -24,8 +24,8 @@
     --button-border: #fb5607;
     --button-color: #ffffff;
     --gradient: linear-gradient(45deg, #fb5607 34%, #fd8249 94%);
-    --icone-gradient: linear-gradient(45deg, #fb5607 34%, #f3e249 94%);
     --icone-investimento-gradient: linear-gradient(45deg, #70E000 34%, #008000 94%);
+    --botao-gradient: linear-gradient(45deg, #fb5607 34%, #f3e249 94%);
     --gradient-hover: linear-gradient(45deg, #fd8249  0%, #fb5607);
 }
 
@@ -83,11 +83,14 @@ body {
     border: 1px solid var(--button-border);
     border-radius: 0.5rem;
     padding: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    color: var(--button-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
 }
-
-
-
-
 
 /* tags gerais */
 i {
@@ -131,3 +134,36 @@ ul {
     font-size: 1rem;
     color: var(--logo);
 }
+
+/* Anne Caroline */
+#anne {
+    background-color: #FFF1EB;
+
+}
+
+.anne .flex-coluna {
+    gap: 2rem;
+}
+
+.anne-foto {
+    width: 100%;
+}
+
+.anne h3 {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/* redes sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;    
+}
+
+.rede-social i {
+    font-size: 1.9rem;
+}
+
+/* Formas de Contato */
