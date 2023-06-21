@@ -1,0 +1,135 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --bgc-body: #fffff;
+    --icone-color: #fb5607;
+    --link: #000000;
+    --bgc-header-footer: rgba(251, 84, 7, 0.05);
+    --border-header-footer: rgba(251, 84, 7, 0.25);
+
+    --destaque: #FB5607 ; /* Possíveis: #50d965 , #00b300 */
+    --bgc-section: #f5f5f5;
+
+
+    --button-color: #ffffff;
+    --gradient: linear-gradient(45deg, #fb5607 34%, #fd8249 94%);
+    --icone-investimento-gradient: linear-gradient(45deg, #70E000 34%, #008000 94%);
+    --botao-gradient: linear-gradient(45deg, #fb5607 34%, #f3e249 94%);
+    --gradient-hover: linear-gradient(45deg, #fd8249  0%, #fb5607);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bgc-body);
+}
+
+/* classes gerais */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.espaco-interno {
+    padding-block: 2rem;
+}
+
+.flex-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.wrapper-icon {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.wrapper-icon i {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    color: var(--icone-color);
+    margin-top: 0.4rem;
+    /* background-image: var(--icone-color);
+    background-clip: text;
+    -webkit-background-clip: text; */
+}
+
+.logo {
+    width: 15%;
+}
+
+.title {
+    font-size: 2.3rem;
+    line-height: 150%;
+}
+
+.subtitle {
+    font-size: 1.9rem;
+    line-height: 150%;
+}
+
+.paragrafo-principal {
+    font-size: 1.5rem;
+    line-height: 150%;
+}
+
+/* Cabeçalho */
+header {
+    border-bottom: 1px solid var(--bgc-header-footer);
+    background-color: var(--bgc-header-footer);
+
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Rodapé */
+#rodape {
+    border-top: 1px solid var(--border-header-footer);
+    background-color: var(--bgc-header-footer);
+}
+
+.rodape .flex-coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.rodape .flex-coluna img {
+    margin-bottom: 2rem;
+}
+
+.wrapper-flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.wrapper-flex-row a,
+.wrapper-flex-row p,
+.rodape p {
+    color: var(--link);
+    font-weight: 700;
+    text-align: center;
+}
+
+.wrapper-flex-row i {
+    font-size: 0.4rem;
+    color: var(--icone-color);
+}
