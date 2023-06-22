@@ -17,6 +17,8 @@
     --icone-color-02: #000000;
     --link-color: #000000;
     --icone-color: #fb5607;
+    --icone-border: rgba(251, 84, 7, 0.25);
+    --icone-bgc: rgba(251, 84, 7, 0.05);
     --button-border: #fb5607;
     --button-color: #ffffff;
     --gradient: linear-gradient(45deg, #fb5607 34%, #fd8249 94%);
@@ -49,7 +51,7 @@ body {
 }
 
 .logo {
-    width: 15%;
+    width: 20%;
 }
 
 .title {
@@ -105,6 +107,8 @@ ul {
 .cabecalho {
     border-bottom: 1px solid var(--border-header);
     background-color: var(--bgc-header);
+
+    border: 1px solid green;
 }
 
 .navegacao-barra {
@@ -112,17 +116,29 @@ ul {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    border: 1px solid red;
 }
 
-.container-logo {
-    display: flex;
-    align-items: center;
-    gap: 0.7rem;
+.navegacao-barra .icone-menu {
+    font-size: 3rem;
 }
 
-.navegacao-icon {
-    font-size: 1.5rem;
+/* Início Itens Ocultos */
+.navegacao-barra .navegacao-lista {
+    display: none;
 }
+
+.navegacao-barra .navegacao-redes-sociais {
+    display: none;
+}
+
+.navegacao-barra .fechar-menu {
+    display: none;
+}
+/* Final Itens Ocultos */
+
+
+
 
 /* Anne Caroline */
 #anne {
@@ -162,9 +178,39 @@ ul {
     align-items: center;
 }
 
+.card {
+    border: 1px solid var(--icone-border);
+    background-color: var(--icone-bgc);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
 .card i {
     font-size: 3.5rem;
-    color: var(--icone-color-02);
+    color: var(--icone-color);
+}
+
+/* Depoimento */
+.cards-depoimentos {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-depoimento {
+    border: 1px solid var(--icone-border);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 25rem;
+    height: auto;
+}
+
+.avatar-depoimento {
+    width: 15%;
+    clip-path: circle();
 }
 
 /* Rodapé */
