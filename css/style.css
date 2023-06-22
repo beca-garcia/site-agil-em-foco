@@ -8,26 +8,18 @@
 
 :root {
     --bgc-body: #f5f5f5;
-    --icon: #FB5607;
-    --destaque: #FB5607 ; /* Possíveis: #50d965 , #00b300 */
+    --destaque: #FB5607; 
+    --bgc-footer: rgba(251, 84, 7, 0.05);
+    --border-footer: rgba(251, 84, 7, 0.25);
+    --bgc-header: rgba(251, 84, 7, 0.05);
+    --border-header: rgba(251, 84, 7, 0.25);
     --bgc-section: #FFF1EB;
-    --title-color: #008000;
-
-    --link: #000000;
-    --white: #FFFFFF;
-    --logo: #FB5607;
-
-    --color-body: #ffffff;
-    --destaque-bgc: #fb5407;
+    --icone-color-02: #000000;
+    --link-color: #000000;
     --icone-color: #fb5607;
-    --subtitle-color: #fb5607;
-    --button-bgc: #fb5607;
     --button-border: #fb5607;
     --button-color: #ffffff;
     --gradient: linear-gradient(45deg, #fb5607 34%, #fd8249 94%);
-    --icone-investimento-gradient: linear-gradient(45deg, #70E000 34%, #008000 94%);
-    --botao-gradient: linear-gradient(45deg, #fb5607 34%, #f3e249 94%);
-    --gradient-hover: linear-gradient(45deg, #fd8249  0%, #fb5607);
 }
 
 html {
@@ -98,7 +90,7 @@ body {
 
 /* tags gerais */
 i {
-    color: var(--icon);
+    color: var(--icone-color);
 }
 
 b {
@@ -111,7 +103,8 @@ ul {
 
 /* Cabeçalho */
 .cabecalho {
-    border: 1px solid green;
+    border-bottom: 1px solid var(--border-header);
+    background-color: var(--bgc-header);
 }
 
 .navegacao-barra {
@@ -119,15 +112,12 @@ ul {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    border: 1px solid orange;
 }
 
 .container-logo {
     display: flex;
     align-items: center;
     gap: 0.7rem;
-
-    border: 1px solid blue;
 }
 
 .navegacao-icon {
@@ -137,7 +127,6 @@ ul {
 /* Anne Caroline */
 #anne {
     background-color: var(--bgc-section);
-
 }
 
 .anne .flex-coluna {
@@ -175,12 +164,13 @@ ul {
 
 .card i {
     font-size: 3.5rem;
-    color: #000;
+    color: var(--icone-color-02);
 }
 
 /* Rodapé */
 #rodape {
-    background-color: var(--bgc-section);
+    border-top: 1px solid var(--border-footer);
+    background-color: var(--bgc-footer);
 }
 
 .rodape .flex-coluna {
@@ -205,7 +195,7 @@ ul {
 .wrapper-flex-row a,
 .wrapper-flex-row p,
 .rodape p {
-    color: var(--link);
+    color: var(--link-color);
     font-weight: 700;
     text-align: center;
 }
