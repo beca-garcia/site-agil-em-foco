@@ -16,66 +16,46 @@
   </head>
   <body>
     <!-- navegação -->
-    <header id="header" class="cabecalho">
-      <nav class="navegacao-barra">
-        <a href="#"><img class="logo" src="assets/images/logo/logo-laranja.png" alt="#" /></a>
+    <header id="header">
+      <div class="container">
+        <div class="container-navbar">
+          <!-- logo -->
+          <img
+            src="./assets/images/logo/agil-em-foco-aprovada-300.png"
+            alt="Logo escrito Ágil em Foco na cor laranja"
+            class="logo"
+          />
 
-        <!-- menu -->
-        <div class="navegacao-lista menu">
-          <ul class="lista-navegacao">
-            <li class="navegacao-item">
-              <a href="#" class="navegacao-link">Nosso propósito</a>
-            </li>
-            <li class="navegacao-item">
-              <a href="#" class="navegacao-link">Agilidade</a>
-            </li>
+          <div class="menu-section">
+            <!-- classe: mostrar-menu -->
+            <!-- itens de navegação -->
+            <nav class="navbar">
+              <ul class="navbar-lista">
+                <li class="navbar-item">
+                  <a class="navbar-link" href="#">Propósito</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="navbar-link" href="#">Agilidade</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="navbar-link" href="#">Consultoria</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="navbar-link" href="#">Contato</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- ícones do menu  -->
 
-            <li class="navegacao-item">
-              <a href="#" class="navegacao-link">Cursos</a>
-            </li>
-
-            <li class="navegacao-item">
-              <a href="#" class="navegacao-link">Consultoria</a>
-            </li>
-            <li class="navegacao-item">
-              <a href="#" class="navegacao-link">Contato</a>
-            </li>
-          </ul>
+            <div class="icone-menu icone-abrir toggle">
+              <i class="fa-solid fa-bars icone-menu"></i>
+            </div>
+            <div class="icone-menu icone-fechar toggle">
+              <i class="fa-solid fa-xmark icone-menu"></i>
+            </div>
+          </div>
         </div>
-        <!-- final menu -->
-
-        <!-- <div class="navegacao-redes-sociais">
-          <a href="https://www.instagram.com/agilemfoco/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCAN-HmjypBcoHYI55ydgyIg"
-            target="_blank"
-          >
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-          <a
-            href="https://www.tiktok.com/@agilemfoco?_t=8dMB1sOdKh3&_r=1"
-            target="_blank"
-          >
-            <i class="fa-brands fa-tiktok"></i>
-          </a>
-          <a href="#">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="https://www.facebook.com/agilemfoco" target="_blank">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-        </div> -->
-
-        <div class="toggle abrir-menu">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-        <div class=" toggle fechar-menu">
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-        <!-- <i class="fa-solid fa-burger"></i> -->
-      </nav>
+      </div>
     </header>
 
     <!-- <header id="header" class="cabecalho">
@@ -185,22 +165,31 @@
           <h2 class="subtitle">O Ágil em Foco é para mim?</h2>
           <div class="wrapper flex-coluna">
             <p class="paragrafo-principal">
-              Você, empresário que quer melhorar seus processos internos, quer entregar valor ao seu cliente, quer que seu time trabalhe bem a eficiência e eficácia nos projetos para sair dentro do prazo e orçamento, vale a pena dar uma olhada com carinho nas práticas ágeis. 
+              Você, empresário que quer melhorar seus processos internos, quer
+              entregar valor ao seu cliente, quer que seu time trabalhe bem a
+              eficiência e eficácia nos projetos para sair dentro do prazo e
+              orçamento, vale a pena dar uma olhada com carinho nas práticas
+              ágeis.
             </p>
             <img
               class="imagem-grafica"
               src="https://images.unsplash.com/photo-1569161031696-69ccae1912ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
               alt=""
             />
-            <a href="#" class="button">Quero saber mais</a>
+            <a href="paginas/empresas.html" class="button"
+              >Ágil em Foco para empresas</a
+            >
           </div>
 
           <div class="wrapper flex-coluna">
             <p class="paragrafo-principal">
-              Se você está buscando uma carreira que seja desafiadora, pague bem, que possa trabalhar no conforto da sua casa e que está com alta demanda no mercado, você está no lugar certo.
+              Se você está buscando uma carreira que seja desafiadora, pague
+              bem, que possa trabalhar no conforto da sua casa e que está com
+              alta demanda no mercado, você está no lugar certo.
             </p>
             <p class="paragrafo-principal">
-              Agora, se você já trabalha na área e quer explorar e se capacitar mais ainda, o Ágil em Foco também é para você.
+              Agora, se você já trabalha na área e quer explorar e se capacitar
+              mais ainda, o Ágil em Foco também é para você.
             </p>
             <img
               class="imagem-grafica"
@@ -211,7 +200,7 @@
           </div>
         </div>
       </div>
-    </section>    
+    </section>
 
     <!-- Sobre a Anne -->
     <section id="anne" class="anne">
@@ -312,7 +301,11 @@
 
           <div class="cards-depoimentos">
             <div class="card-depoimento">
-              <img class="avatar-depoimento" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="#">
+              <img
+                class="avatar-depoimento"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                alt="#"
+              />
 
               <h4 class="nome-depoimento">Rebeca Garcia</h4>
 
@@ -324,14 +317,23 @@
                 <i class="fa-solid fa-star"></i>
               </div>
 
-              <p class="paragrafo-secundario">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, officia ad! Quo molestiae neque ab fugit vero nobis dignissimos sapiente natus nostrum aperiam! Fuga pariatur, quod officiis est quia non?"</p>
+              <p class="paragrafo-secundario">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi, officia ad! Quo molestiae neque ab fugit vero nobis
+                dignissimos sapiente natus nostrum aperiam! Fuga pariatur, quod
+                officiis est quia non?"
+              </p>
             </div>
 
             <div class="card-depoimento">
-              <img class="avatar-depoimento" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="#">
+              <img
+                class="avatar-depoimento"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                alt="#"
+              />
 
               <h4 class="nome-depoimento">Victor Vitor</h4>
-              
+
               <div class="estrelas">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -340,14 +342,23 @@
                 <i class="fa-regular fa-star"></i>
               </div>
 
-              <p class="paragrafo-secundario">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, officia ad! Quo molestiae neque ab fugit vero nobis dignissimos sapiente natus nostrum aperiam! Fuga pariatur, quod officiis est quia non?"</p>
+              <p class="paragrafo-secundario">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi, officia ad! Quo molestiae neque ab fugit vero nobis
+                dignissimos sapiente natus nostrum aperiam! Fuga pariatur, quod
+                officiis est quia non?"
+              </p>
             </div>
 
             <div class="card-depoimento">
-              <img class="avatar-depoimento" src="https://plus.unsplash.com/premium_photo-1673296129756-e45408e25250?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=513&q=80" alt="#">
+              <img
+                class="avatar-depoimento"
+                src="https://plus.unsplash.com/premium_photo-1673296129756-e45408e25250?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=513&q=80"
+                alt="#"
+              />
 
               <h4 class="nome-depoimento">Girafa Ágil</h4>
-              
+
               <div class="estrelas">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -356,7 +367,12 @@
                 <i class="fa-solid fa-star-half-stroke"></i>
               </div>
 
-              <p class="paragrafo-secundario">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, officia ad! Quo molestiae neque ab fugit vero nobis dignissimos sapiente natus nostrum aperiam! Fuga pariatur, quod officiis est quia non?"</p>
+              <p class="paragrafo-secundario">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi, officia ad! Quo molestiae neque ab fugit vero nobis
+                dignissimos sapiente natus nostrum aperiam! Fuga pariatur, quod
+                officiis est quia non?"
+              </p>
             </div>
           </div>
         </div>
@@ -370,8 +386,8 @@
           <div class="flex-coluna">
             <img
               class="logo"
-              src="assets/images/logo/logo-laranja.png"
-              alt="#"
+              src="./assets/images/logo/agil-em-foco-aprovada-300.png"
+              alt="Logo escrito Ágil em Foco na cor laranja"
               class="logo"
             />
             <div class="wrapper-flex-row">

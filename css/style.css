@@ -7,20 +7,32 @@
 }
 
 :root {
+    /* backgrounds */
     --bgc-body: #f5f5f5;
-    --destaque: #FB5607; 
-    --bgc-footer: rgba(251, 84, 7, 0.05);
-    --border-footer: rgba(251, 84, 7, 0.25);
     --bgc-header: rgba(251, 84, 7, 0.05);
-    --border-header: rgba(251, 84, 7, 0.25);
+    --bgc-footer: rgba(251, 84, 7, 0.05);
     --bgc-section: #FFF1EB;
-    --icone-color-02: #000000;
-    --link-color: #000000;
-    --icone-color: #fb5607;
-    --icone-border: rgba(251, 84, 7, 0.25);
     --icone-bgc: rgba(251, 84, 7, 0.05);
+    /* destaques */
+    --destaque: #FB5607; 
+    /* bordas */
+    --border-footer: rgba(251, 84, 7, 0.25);
+    --border-header: rgba(251, 84, 7, 0.25);
+    --icone-border: rgba(251, 84, 7, 0.25);
     --button-border: #fb5607;
+    /* icones */    
+    --icone-color: #fb5607;
+    --icone-color-02: #000000;
+    /* links */
+    --link-color: #000000;
+    --icone-menu-link: #ffffff;
+    /* menu hamburguer */
+    --bgc-menu-hamburguer: #fb5607;
+    --icone-menu-abrir: #fb5607;
+    --icone-menu-fechar: #ffffff;
+    /* cores */
     --button-color: #ffffff;
+    /* gradientes */
     --gradient: linear-gradient(45deg, #fb5607 34%, #fd8249 94%);
 }
 
@@ -104,6 +116,93 @@ ul {
 }
 
 /* Cabeçalho */
+header {
+    padding: 0.8rem 0;
+    border-bottom: 0.2rem solid var(--border-header);
+}
+
+.container-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icone-menu i {
+    font-size: 3.5rem;
+    color: var(--icone-color);
+}
+
+/* "sumir" com os itens de navegação e o ícone de fechar menu */
+/* itens de navegação */
+nav {
+    display: none;
+}
+
+/* ícone de fehcar o menu */
+.icone-fechar {
+    display: none;
+}
+
+/* quando clicar no ícone das 3 barrinhas, quero que abra o os itens de navegação e apareça o x de fechar o menu */
+.menu-section.mostrar-menu .icone-abrir {
+    display: none;
+} 
+
+.menu-section.mostrar-menu .icone-menu i {
+    color: var(--icone-menu-fechar);
+}
+
+.menu-section.mostrar-menu .icone-fechar {
+    display: block;
+    position: absolute;
+    top: 2.3rem;
+    right: 1.8rem;
+}
+
+.menu-section.mostrar-menu  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--bgc-menu-hamburguer); 
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s;
+}
+
+.menu-section.mostrar-menu nav {
+    display: block;
+}
+
+.menu-section.mostrar-menu nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+/* .menu-section.mostrar-menu nav ul li {
+    border: 1px solid blue;
+} */
+
+.menu-section.mostrar-menu nav ul li a {
+    font-size: 2.5rem;
+    color: var(--icone-menu-link);
+    font-weight: 700;
+    transition-duration: 0.8s;
+}
+
+
+
+
+
+
+
 .cabecalho {
     border-bottom: 1px solid var(--border-header);
     background-color: var(--bgc-header);
