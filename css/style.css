@@ -7,6 +7,7 @@
 }
 
 :root {
+    --header-height: 4.5rem;
     /* backgrounds */
     --bgc-body: #f5f5f5;
     --bgc-header: rgba(251, 84, 7, 0.05);
@@ -54,6 +55,10 @@ body {
 
 .espaco-interno {
     padding-block: 2rem;
+}
+
+.section {
+    padding: calc(5rem + var(--header-height)) 0;
 }
 
 .flex-coluna {
@@ -119,6 +124,16 @@ ul {
 header {
     padding: 0.8rem 0;
     border-bottom: 0.2rem solid var(--border-header);
+    background-color: var(--bgc-body);
+    box-shadow: 0px 0px 12px rgba(251, 86, 7, 0.3);
+
+    display: flex;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
 }
 
 .container-navbar {
