@@ -299,14 +299,14 @@ nav {
     height: auto;
 }
 
-.card-depoimento .avatar-depoimento {
+/* .card-depoimento .avatar-depoimento {
     width: 15%;
     clip-path: circle();
-}
+} */
 
 .card-depoimento h4 {
     font-size: 1.2rem;
-    margin-top: 1.5rem;
+    font-weight: 700;
 }
 
 
