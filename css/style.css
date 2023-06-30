@@ -285,12 +285,10 @@ nav {
 
 /* Depoimento */
 .cards-depoimentos {
-    /* display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 3rem; */
-    
 }
 
 .card-depoimento {
@@ -301,6 +299,7 @@ nav {
     border: 1px solid var(--icone-border);
     border-radius: 0.5rem;
     padding: 2.5rem;
+    margin-bottom: 1.5rem;
     width: 100%;
 }
 
@@ -313,10 +312,6 @@ blockquote .paragrafo-secundario {
     font-size: 1.5rem;
     line-height: 150%;
     padding-bottom: 0.5rem;
-}
-
-blockquote::first-letter {
-    font-size: 3rem;
 }
 
 blockquote cite {
