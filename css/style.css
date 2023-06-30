@@ -24,6 +24,7 @@
     /* icones */    
     --icone-color: #fb5607;
     --icone-color-02: #000000;
+    --estrelas-color: #FFC300;
     /* links */
     --link-color: #000000;
     --icone-menu-link: #ffffff;
@@ -284,40 +285,42 @@ nav {
 
 /* Depoimento */
 .cards-depoimentos {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem; */
+    
 }
 
 .card-depoimento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
     border: 1px solid var(--icone-border);
     border-radius: 0.5rem;
     padding: 2.5rem;
-    width: 25rem;
-    height: auto;
+    width: 100%;
 }
 
-/* .card-depoimento .avatar-depoimento {
-    width: 15%;
-    clip-path: circle();
-} */
-
-.card-depoimento h4 {
-    font-size: 1.2rem;
-    font-weight: 700;
+.card-depoimento .estrelas i {
+    color: var(--estrelas-color);
+    font-size: 1.5rem;
 }
 
-
-.card-depoimento .estrelas {
-    padding: 0.5rem 0;
-    font-size: 1.4rem;
-}
-
-.card-depoimento .paragrafo-secundario {
+blockquote .paragrafo-secundario {
     font-size: 1.5rem;
     line-height: 150%;
+    padding-bottom: 0.5rem;
+}
+
+blockquote::first-letter {
+    font-size: 3rem;
+}
+
+blockquote cite {
+    font-weight: 700;
 }
 
 /* Rodapé */
