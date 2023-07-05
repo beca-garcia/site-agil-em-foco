@@ -1,4 +1,4 @@
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
     section {
         padding: 4rem 0;
     }
@@ -27,10 +27,10 @@
     .rede-social i {
         font-size: 2.2rem;
     }
-}
+} */
 
-@media (max-width: 768px) {
-    /* classes gerais */
+/* @media (max-width: 768px) {
+    
     .container {
         width: 80%;
     }
@@ -73,7 +73,7 @@
         font-size: 2.2rem;
     }
 
-    /* Depoimentos */
+  
     .cards-depoimentos {
        justify-content: space-between;
     }
@@ -82,4 +82,4 @@
         padding: 2.5rem;
         width: 45%;
     }    
-}
+} */

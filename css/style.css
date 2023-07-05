@@ -59,7 +59,7 @@ body {
 }
 
 .section {
-    padding-top: calc(5rem + var(--header-height));
+    padding-top: calc(4rem + var(--header-height));
 }
 
 .flex-coluna {
@@ -109,6 +109,12 @@ body {
 }
 
 /* tags gerais */
+section {
+    border: 1px dashed blue;
+    margin: 4rem 0;
+}
+
+
 i {
     color: var(--icone-color);
 }
