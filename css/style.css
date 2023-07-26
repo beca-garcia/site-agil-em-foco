@@ -1,362 +1,316 @@
-/* Configurações Gerais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
     text-decoration: none;
 }
 
 :root {
-    --header-height: 4.5rem;
-    /* backgrounds */
-    --bgc-body: #f5f5f5;
-    --bgc-header: rgba(251, 84, 7, 0.05);
-    --bgc-footer: rgba(251, 84, 7, 0.05);
-    --bgc-section: #FFF1EB;
-    --icone-bgc: rgba(251, 84, 7, 0.05);
-    /* destaques */
-    --destaque: #FB5607; 
-    /* bordas */
-    --border-footer: rgba(251, 84, 7, 0.25);
-    --border-header: rgba(251, 84, 7, 0.25);
-    --icone-border: rgba(251, 84, 7, 0.25);
-    --button-border: #fb5607;
-    /* icones */    
-    --icone-color: #fb5607;
-    --icone-color-02: #000000;
-    --estrelas-color: #FFC300;
-    /* links */
-    --link-color: #000000;
-    --icone-menu-link: #ffffff;
-    /* menu hamburguer */
-    --bgc-menu-hamburguer: #fb5607;
-    --icone-menu-abrir: #fb5607;
-    --icone-menu-fechar: #ffffff;
-    /* cores */
-    --button-color: #ffffff;
-    /* gradientes */
-    --gradient: linear-gradient(45deg, #fb5607 34%, #fd8249 94%);
+    --header-height: 10rem;
+    --body: #FFFFFF;
+    --body-color: #000000;
 }
 
 html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--bgc-body);
+    position: relative;
+    background-color: var(--body);
+    color: var(--body-color);
+    --line-color01: #d25215;
+    --line-color02: #fb5607;
+    --estrela: #f69e18; 
+    --quote: #fb5607;
+    --testimonial-button: #000000;
+    --testimonial-bg: #fb5607;
+    --contact-icon:#ea591a; 
 }
 
-/* classes gerais */
+/* Tags */
+section {
+    padding-block: 2rem;
+    /* border: 1px dashed darkmagenta; */
+}
+
+/* Classes */
 .container {
-    width: 90%;
+    /* border: 1px solid green; */
+    width: 80%;
     margin: 0 auto;
 }
 
-.espaco-interno {
-    padding-block: 2rem;
+
+/* Imagens e Ícones */
+.logo {
+    width: 12%;
 }
 
-.section {
-    padding-top: calc(4rem + var(--header-height));
+.image {
+    width: 100%;
 }
 
-.flex-coluna {
+/* Separador de Seção */
+.line {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 0.8rem;
 }
 
-.logo {
-    width: 15%;
+.line-1 {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background: var(--line-color01);
 }
 
+.line-2 {
+    width: 22.4rem;
+    height: 2px;
+    background: var(--line-color02);
+}
+
+.line-3 {
+    width: 16.8rem;
+    height: 2px;
+    background: var(--line-color02);
+}
+/* ******************************* */
+
+
+
+/* ******************************** */
+.header {
+    /* border: 1px dashed darkblue; */
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-list {
+    border: 1px solid purple;
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.menu-item {
+    font-size: 1.6rem;
+}
+
+.menu-link {
+    color: #474344;
+    font-weight: 500;
+}
+
+/* ******************************** */
 .title {
-    font-size: 3rem;
-    line-height: 150%;
+    font-size: 3.2rem;
+    font-weight: 500;
     text-align: center;
+    text-shadow: 1px 1px 2px #F2F2F2;
 }
 
 .subtitle {
-    font-size: 2.3rem;
-    line-height: 150%;
+    font-size: 2.4rem;
+    font-weight: 500;
     text-align: center;
+    text-shadow: 1px 1px 2px #F2F2F2;
 }
 
-.paragrafo-principal {
+.p-standart {
     font-size: 1.6rem;
+    font-weight: 300;
+    text-align: justify;
     line-height: 150%;
-    text-align: center;    
 }
 
-.imagem-grafica {
-    width: 100%;
+/* O que é o Ágil em Foco  */
+.organization-container .subtitle {
+    margin-bottom: 1.6rem;
 }
 
-.button {
-    background-image: var(--gradient);
-    border: 1px solid var(--button-border);
-    border-radius: 0.5rem;
-    padding: 2rem;
-    width: 100%;
-    margin: 0 auto;
-    color: var(--button-color);
-    font-size: 1.2rem;
+.organization-container .p-standart::first-letter {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.organization-container .p-standart {
+    margin-bottom: 0.8rem;
+}
+
+/* Depoimentos */
+.testimonials-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    margin-block: 2.4rem;
+}
+
+.testimonials-card {
+    width: 90%;
+    border-radius: 16px;
+    padding: 1.6rem;
+    box-shadow: 1px 1px 1px black;
+}
+
+.estrela {
+    color: var(--estrela);
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.quote {
+    color: var(--quote);
+}
+
+.p-testimonials {
+    font-size: 1.6rem;
+}
+
+.name-testimonials {
+    font-style: italic;
+    font-size: 1rem;
     font-weight: 700;
-    text-transform: uppercase;
+    margin-top: 0.8rem;
+}
+
+/* Contact */
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    margin-block: 2.4rem;
+}
+
+.contact-card {
+    width: 80%;
+    border-radius: 16px;
+    height: 16.8rem;
+    padding: 1.6rem;
+    box-shadow: 1px 1px 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.fa-envelope,
+.fa-whatsapp {
+    color: var(--contact-icon);
+    font-size: 3.2rem;
+}
+
+.p-contact {
+    font-size: 1.6rem;
+    font-weight: 300;
     text-align: center;
 }
 
-/* tags gerais */
+.contact-card a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--contact-icon);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 section {
-    border: 1px dashed blue;
-    margin: 4rem 0;
-}
+    padding-top: calc(4rem + var(--header-height))
+} */
 
-
-i {
-    color: var(--icone-color);
-}
-
-b {
-    color: var(--destaque);
-}
-
-ul {
-    list-style: none;
-}
-
-/* Cabeçalho */
-header {
-    padding: 0.8rem 0;
-    border-bottom: 0.2rem solid var(--border-header);
-    background-color: var(--bgc-body);
-    box-shadow: 0px 0px 12px rgba(251, 86, 7, 0.3);
-    display: flex;
+/* Header */
+/* header {
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #b3c8e7;
+    box-shadow: 0 2px 2px #b3c8e7;
 }
 
-.container-navbar {
+.navigation {
+    border: 1px solid blue;
     display: flex;
     align-items: center;
     justify-content: space-between;
+} */
+
+/* .logo {
+    width: 15%;
 }
 
-.icone-menu i {
-    font-size: 3rem;
-    color: var(--icone-color);
+.menu {
+    border: 1px solid red;
 }
 
-/* "sumir" com os itens de navegação e o ícone de fechar menu */
-/* itens de navegação */
-nav {
-    display: none;
-}
-
-/* ícone de fehcar o menu */
-.icone-fechar {    
-    display: none;
-}
-
-/* quando clicar no ícone das 3 barrinhas, quero que abra o os itens de navegação e apareça o x de fechar o menu */
-.menu-section.mostrar-menu .icone-abrir {
-    display: none;
-} 
-
-.menu-section.mostrar-menu .icone-menu i {
-    color: var(--icone-menu-fechar);
-}
-
-.menu-section.mostrar-menu .icone-fechar {
-    display: block;
-    position: absolute;
-    top: 2.3rem;
-    right: 1.8rem;
-}
-
-.menu-section.mostrar-menu  {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--bgc-menu-hamburguer); 
-    width: 100vw;
-    height: 100vh;
-    z-index: 10;
+.menu-lista {
+    border: 1px solid purple;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    transition-duration: 0.3s;
-}
-
-.menu-section.mostrar-menu nav {
-    display: block;
-}
-
-.menu-section.mostrar-menu nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 6rem;
-}
-
-.menu-section.mostrar-menu nav ul li a {
-    font-size: 2.5rem;
-    color: var(--icone-menu-link);
-    font-weight: 700;
-    transition-duration: 0.8s;
-}
-
-/* Anne Caroline */
-#anne {
-    background-color: var(--bgc-section);
-}
-
-.anne .flex-coluna {
-    gap: 2rem;
-}
-
-.anne-foto {
-    width: 100%;
-    padding: 1rem;
-}
-
-.anne h3 {
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-/* redes sociais */
-.redes-sociais {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;    
-}
-
-.rede-social i {
-    font-size: 1.9rem;
-}
-
-/* Formas de Contato */
-.cards {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.card {
-    width: 250px;
-    height: 200px;
-    border: 1px solid var(--icone-border);
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card .wrapper-card {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.card i {
-    font-size: 3.5rem;
-    color: var(--icone-color);
-}
-
-.card .paragrafo-secundario {
-    font-size: 1.5rem;
-}
-
-.card .link-conversa {
-    font-size: 1.7rem;
-    color: var(--destaque);
-    font-weight: 700;
-}
-
-.card .link-conversa i {
-    font-size: 2rem;
-}
-
-/* Depoimento */
-.cards-depoimentos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-depoimento {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     gap: 1rem;
-    border: 1px solid var(--icone-border);
-    border-radius: 0.5rem;
-    padding: 2.5rem;
-    margin-bottom: 1.5rem;
-    width: 100%;
 }
 
-.card-depoimento .estrelas i {
-    color: var(--estrelas-color);
-    font-size: 1.5rem;
+.menu-item {
+    font-size: 1.6rem;
 }
 
-blockquote .paragrafo-secundario {
-    font-size: 1.5rem;
-    line-height: 150%;
-    padding-bottom: 0.5rem;
+.menu-item a {
+    color: black;
+    font-weight: 500;
 }
 
-blockquote cite {
-    font-weight: 700;
+.open-menu,
+.close-menu {
+    font-size: 3.2rem;
 }
 
-/* Rodapé */
-#rodape {
-    border-top: 1px solid var(--border-footer);
-    background-color: var(--bgc-footer);
-}
+.close-menu {
+    display: none;
+} */
 
-.rodape .flex-coluna {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-}
-
-.rodape .flex-coluna img {
-    margin-bottom: 2rem;
-}
-
-.wrapper-flex-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-.wrapper-flex-row a,
-.wrapper-flex-row p,
-.rodape p {
-    color: var(--link-color);
-    font-weight: 700;
-    text-align: center;
-}
-
-.wrapper-flex-row i {
-    font-size: 0.4rem;
-}
+/* Apresentação */

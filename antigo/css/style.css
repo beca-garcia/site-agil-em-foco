@@ -1,0 +1,423 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --header-height: 4.5rem;
+    /* backgrounds */
+    --bgc-body: #f5f5f5;
+    --bgc-header: rgba(251, 84, 7, 0.05);
+    --bgc-footer: rgba(251, 84, 7, 0.05);
+    --bgc-section: #FFF1EB;
+    --icone-bgc: rgba(251, 84, 7, 0.05);
+    /* destaques */
+    --destaque: #FB5607; 
+    /* bordas */
+    --border-footer: rgba(251, 84, 7, 0.25);
+    --border-header: rgba(251, 84, 7, 0.25);
+    --icone-border: rgba(251, 84, 7, 0.25);
+    --button-border: #fb5607;
+    /* icones */    
+    --icone-color: #fb5607;
+    --icone-color-02: #000000;
+    --estrelas-color: #FFC300;
+    /* links */
+    --link-color: #000000;
+    --icone-menu-link: #ffffff;
+    /* menu hamburguer */
+    --bgc-menu-hamburguer: #fb5607;
+    --icone-menu-abrir: #fb5607;
+    --icone-menu-fechar: #ffffff;
+    /* cores */
+    --button-color: #ffffff;
+    /* gradientes */
+    --gradient: linear-gradient(45deg, #fb5607 34%, #fd8249 94%);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bgc-body);
+}
+
+/* classes gerais */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.espaco-interno {
+    padding-block: 2rem;
+}
+
+.section {
+    padding-top: calc(4rem + var(--header-height));
+}
+
+.flex-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.logo {
+    width: 15%;
+}
+
+.title {
+    font-size: 3rem;
+    line-height: 150%;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 2.3rem;
+    line-height: 150%;
+    text-align: center;
+}
+
+.paragrafo-principal {
+    font-size: 1.6rem;
+    line-height: 150%;
+    text-align: center;    
+}
+
+.imagem-grafica {
+    width: 100%;
+}
+
+.button {
+    background-image: var(--gradient);
+    border: 1px solid var(--button-border);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    color: var(--button-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* tags gerais */
+section {
+    border: 1px dashed blue;
+    margin: 4rem 0;
+}
+
+
+i {
+    color: var(--icone-color);
+}
+
+b {
+    color: var(--destaque);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Banner */
+.container-inline {
+    display: inline-flex;
+}
+
+.container-inline .estatico {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container-inline .dinamico {
+    margin-left: 15px;
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.dinamico li {
+    color: #fc6d6d;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px
+    }    
+}
+
+.dinamico li span {
+    position: relative;
+}
+
+.dinamico li span::after {
+    content: "";
+    border-left: 2px solid #fc6d6d;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: typing 1.5s steps(10) infinite;
+    background: #fff;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }    
+}
+
+
+
+
+
+/* Cabeçalho */
+header {
+    padding: 0.8rem 0;
+    border-bottom: 0.2rem solid var(--border-header);
+    background-color: var(--bgc-body);
+    box-shadow: 0px 0px 12px rgba(251, 86, 7, 0.3);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.container-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icone-menu i {
+    font-size: 3rem;
+    color: var(--icone-color);
+}
+
+/* "sumir" com os itens de navegação e o ícone de fechar menu */
+/* itens de navegação */
+nav {
+    display: none;
+}
+
+/* ícone de fehcar o menu */
+.icone-fechar {    
+    display: none;
+}
+
+/* quando clicar no ícone das 3 barrinhas, quero que abra o os itens de navegação e apareça o x de fechar o menu */
+.menu-section.mostrar-menu .icone-abrir {
+    display: none;
+} 
+
+.menu-section.mostrar-menu .icone-menu i {
+    color: var(--icone-menu-fechar);
+}
+
+.menu-section.mostrar-menu .icone-fechar {
+    display: block;
+    position: absolute;
+    top: 2.3rem;
+    right: 1.8rem;
+}
+
+.menu-section.mostrar-menu  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--bgc-menu-hamburguer); 
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s;
+}
+
+.menu-section.mostrar-menu nav {
+    display: block;
+}
+
+.menu-section.mostrar-menu nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.menu-section.mostrar-menu nav ul li a {
+    font-size: 2.5rem;
+    color: var(--icone-menu-link);
+    font-weight: 700;
+    transition-duration: 0.8s;
+}
+
+/* Anne Caroline */
+#anne {
+    background-color: var(--bgc-section);
+}
+
+.anne .flex-coluna {
+    gap: 2rem;
+}
+
+.anne-foto {
+    width: 100%;
+    padding: 1rem;
+}
+
+.anne h3 {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/* redes sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;    
+}
+
+.rede-social i {
+    font-size: 1.9rem;
+}
+
+/* Formas de Contato */
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    width: 250px;
+    height: 200px;
+    border: 1px solid var(--icone-border);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .wrapper-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card i {
+    font-size: 3.5rem;
+    color: var(--icone-color);
+}
+
+.card .paragrafo-secundario {
+    font-size: 1.5rem;
+}
+
+.card .link-conversa {
+    font-size: 1.7rem;
+    color: var(--destaque);
+    font-weight: 700;
+}
+
+.card .link-conversa i {
+    font-size: 2rem;
+}
+
+/* Depoimento */
+.cards-depoimentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-depoimento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    border: 1px solid var(--icone-border);
+    border-radius: 0.5rem;
+    padding: 2.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.card-depoimento .estrelas i {
+    color: var(--estrelas-color);
+    font-size: 1.5rem;
+}
+
+blockquote .paragrafo-secundario {
+    font-size: 1.5rem;
+    line-height: 150%;
+    padding-bottom: 0.5rem;
+}
+
+blockquote cite {
+    font-weight: 700;
+}
+
+/* Rodapé */
+#rodape {
+    border-top: 1px solid var(--border-footer);
+    background-color: var(--bgc-footer);
+}
+
+.rodape .flex-coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.rodape .flex-coluna img {
+    margin-bottom: 2rem;
+}
+
+.wrapper-flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.wrapper-flex-row a,
+.wrapper-flex-row p,
+.rodape p {
+    color: var(--link-color);
+    font-weight: 700;
+    text-align: center;
+}
+
+.wrapper-flex-row i {
+    font-size: 0.4rem;
+}

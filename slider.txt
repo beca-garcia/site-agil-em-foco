@@ -1,0 +1,97 @@
+<div class="slider">
+          <div class="slides">
+            <!-- Radio buttons -->
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+
+            <!-- Slide images -->
+            
+            <!-- Navigation auto -->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+        </div>
+
+.slider {
+    border: 1px solid black;
+    width: 100%;
+    height: 54.4rem;
+    overflow: hidden;
+}
+
+.slides {
+    width: 580%;
+    /* height: 24rem; */
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    /* border: 1px solid darkmagenta; */
+    width: 33.6rem;
+    position: relative;
+    transition: 2s;
+}
+
+.wrapper-testimonials {
+    width: 100%;
+    height: auto;
+    padding: 0.8rem;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 300px;
+    /* margin-top: -8px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid var(--testimonial-button);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+.manual-btn:hover {
+    background-color: var(--testimonial-bg);
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -17%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -34%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -51.5%;
+}
